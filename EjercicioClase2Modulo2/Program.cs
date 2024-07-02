@@ -23,13 +23,9 @@ namespace EjercicioClase2Modulo2
             #region Ejercicio1
 
             // Detectar cual es el numero mas grande e imprimirlo por consola
-
             var lstNumeros = new List<int>() { 25,10,99,105, 1, 84, 22};
-            var lstNumeroMayor = lstNumeros.Where(w => w > 99);
-            foreach (var numero in lstNumeroMayor)
-            {
-                Console.WriteLine("El numero mayor de la lista es: "+numero);
-            }
+            int numeroMayor = lstNumeros.Max();
+            Console.WriteLine("El número mayor en la lista es: " + numeroMayor);
 
             #endregion
 
